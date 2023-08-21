@@ -5,154 +5,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AmeriPanel SC</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-gray-900 text-white">
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="http://www.ameripanelsc.com/assets/images/logo.15054702.jpg" alt="AmeriPanel Logo"
-                        class="img-fluid" style="max-width: 100px;">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
+        <nav class="bg-gray-900">
+            <div class="container mx-auto">
+                <div class="flex items-center justify-between py-4">
+                    <a class="navbar-brand" href="#">
+                        <img src="http://www.ameripanelsc.com/assets/images/logo.15054702.jpg" alt="AmeriPanel Logo"
+                            class="img-fluid" style="max-width: 100px;">
+                    </a>
+                    <button class="navbar-toggler ml-3 focus:outline-none" id="menu-toggle">
+                        <!-- Hamburger menu icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                            <path d="M3 12h18M3 6h18M3 18h18"></path>
+                        </svg>
+                    </button>
+                    <div class="fixed top-0 right-0 h-screen w-64 bg-gradient-to-r from-gray-900 to-transparent overflow-y-auto transform translate-x-full ease-in-out transition-all duration-300 mt-12 ml-12 pl-6"
+                        id="menu-panel">
+                        <button class="navbar-toggler ml-auto focus:outline-none" id="close-toggle">
+                            <!-- Close menu icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="w-6 h-6">
+                                <path d="M18 6L6 18M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Materials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Recent Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Floor Plans</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Energy Savings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dealership Opportunities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">More Information</a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Left Side Navbar -->
-    <div class="container-fluid">
-        <div class="row">
-            <nav class="col-md-2 d-md-block sidebar">
-                <div class="position-fixed" id="sidebar">
-                    <div class="sidebar-sticky">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <i class="fas fa-bars"></i>
-                        </button>
-                        <div class="collapse show" id="sidebarCollapse">
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Materials</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Recent Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Floor Plans</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Testimonials</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Energy Savings</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Dealership Opportunities</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">News</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">More Information</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-            <!-- Hero Section JumboTron-->
-            <main role="main" class="hero-main col-md-9 ml-sm-auto col-lg-10 px-4">
-                <div class="jumbotron bg-dark">
-                    <img class="examples"
+    <!-- Hero Section JumboTron-->
+    <main role="main" class="hero-main flex-auto p-6">
+        <div class="bg-gray-900 py-20 flex justify-center items-center">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-3 gap-4">
+                    <img class="examples mb-6 max-w-xs h-56 w-80 rounded object-cover"
                         src="http://www.ameripanelsc.com/assets/images/CHAVIS_PHIPPS_167.9344457_large.jpg"
-                        alt="Construction Image" class="img-fluid" style="max-width: 100%; max-height: 200px;">
-                    <img class="examples"
+                        alt="Construction Image">
+                    <img class="examples mb-6 max-w-xs h-56 w-80 rounded object-cover"
                         src="http://www.ameripanelsc.com/assets/images/CHAVIS_PHIPPS_235.29970447_std.jpg"
-                        alt="Construction Image" class="img-fluid" style="max-width: 100%; max-height: 200px;">
-                    <img class="examples"
+                        alt="Construction Image">
+                    <img class="examples mb-6 max-w-xs h-56 w-80 rounded object-cover"
                         src="http://www.ameripanelsc.com/assets/images/old_hilton_001.9344616_large.JPG"
-                        alt="Construction Image" class="img-fluid" style="max-width: 100%; max-height: 200px;">
-                    <!-- img-fluid class for responsive image -->
-
-                    <h3 class="display-4">Step into the Future with AmeriPanel Homes</h3>
-
-                    <p class="lead">Embrace the innovation of our homes, crafted with Structural Insulated Panels
-                        (SIPs).</p>
-
-                    <p class="lead"> Experience walls that are not just walls but a revolutionary approach to insulation
-                        and
-                        energy efficiency.</p>
-
-                    <hr class="my-4">
-                    <p>Ditch traditional houses and their limitations.</p>
-                    <p> Introduce yourself to a home that offers
-                        unprecedented energy efficiency, user-friendly design and sustainability. </p>
-
-                    <p> Click below to learn
-                        more about why AmeriPanel is the future of comfortable living.</p>
-
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Discover AmeriPanel Homes</a>
-
+                        alt="Construction Image">
                 </div>
 
-                <!-- Content Body -->
-                <div class="container container-body">
-                    <h2>Transforming the Way You Live with Our Services</h2>
+                <h3 class="text-4xl font-bold mb-2">Step into the Future with AmeriPanel Homes</h3>
+                <p class="text-lg mb-4">Embrace the innovation of our homes, crafted with Structural Insulated Panels
+                    (SIPs).</p>
+                <p class="text-lg mb-4">Experience walls that are not just walls but a revolutionary approach to
+                    insulation and dust energy efficiency.</p>
 
-                    <p>Our promise is not just a home, but a lifestyle upgrade. We believe in changing the residential
-                        landscape with homes that cost less and offer more. Every AmeriPanel home comes with:</p>
-                    <ul>
-                        <li>One-piece wall sections composed of eco-friendly materials</li>
-                        <li>Solid insulation via two sheets of oriented strand board (OSB) that engulfs a rigid core of
-                            expanded polystyrene foam (EPS)</li>
-                        <li>Unmatched energy efficiency, drastically cutting down your expenses</li>
-                        <li>A commitment to green living through less waste and more recycling</li>
-                    </ul>
-                    <p>Ready to redefine modern living? Get in touch with us and explore how we can reshape your homely
-                        experience.</p>
-                    <a class="btn btn-primary" href="#" role="button">Contact Us</a>
-                </div>
+                <hr class="my-4">
 
-                <!-- Footer -->
-                <footer class="footer mt-auto py-3">
-                    <div class="container container-footer">
-                        <span class="label-text-muted">AmeriPanel Homes of South Carolina &copy; 2023. All rights
-                            reserved.</span>
-                    </div>
-                </footer>
-            </main>
+                <p class="text-lg mb-4">Ditch traditional houses and their limitations. Introduce yourself to a home
+                    that offers unprecedented energy efficiency, user-friendly design, and sustainability.</p>
+
+                <p class="text-lg mb-8">Click below to learn more about why AmeriPanel is the future of comfortable
+                    living.</p>
+
+                <!-- Updated button -->
+                <a class="inline-block px-5 py-3 rounded-lg shadow-lg bg-indigo-600 text-white text-lg" href="#"
+                    role="button">Discover AmeriPanel Homes</a>
+            </div>
         </div>
+    </main>
+
+
+
+
+
+
+    <!-- Content Body -->
+    <div class="container container-body py-10 mx-auto">
+        <h2 class="text-3xl font-bold mb-4">Transforming the Way You Live with Our Services</h2>
+
+        <p class="text-lg mb-4">Our promise is not just a home, but a lifestyle upgrade. We believe in changing the
+            residential landscape with homes that cost less and offer more. Every AmeriPanel home comes with:</p>
+        <ul class="list-disc pl-6 mb-4">
+            <li class="text-lg">One-piece wall sections composed of eco-friendly materials</li>
+            <li class="text-lg">Solid insulation via two sheets of oriented strand board (OSB) that engulfs a rigid core
+                of expanded polystyrene foam (EPS)</li>
+            <li class="text-lg">Unmatched energy efficiency, drastically cutting down your expenses</li>
+            <li class="text-lg">A commitment to green living through less waste and more recycling</li>
+        </ul>
+        <p class="text-lg mb-8">Ready to redefine modern living? Get in touch with us and explore how we can reshape
+            your homely experience.</p>
+        <a class="inline-block px-5 py-3 rounded-lg shadow-lg bg-indigo-600 text-white text-lg" href="#"
+            role="button">Contact Us</a>
     </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-gray-900">
+        <div class="container container-footer text-center">
+            <span class="text-gray-500">AmeriPanel Homes of South Carolina &copy; 2023. All rights reserved.</span>
+        </div>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            document.getElementById("menu-panel").classList.toggle("translate-x-full");
+        });
+
+        document.getElementById("close-toggle").addEventListener("click", function () {
+            document.getElementById("menu-panel").classList.toggle("translate-x-full");
+        });
+    </script>
 </body>
 
 </html>
