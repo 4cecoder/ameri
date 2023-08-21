@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(28, 23, 23);
+    color: #f8f9fa;
+    padding: 2px;
+}
+
+.navbar,
+.sidebar,
+.footer,
+.nav,
+.navbar,
+.container-fluid,
+.row {
+    /* background-color: #343a40; */
+    padding: 10px;
+    color: #f8f9fa;
+}
+
+.footer {
+    background-color: #343a40;
+}
+
+.container {
+    margin: 5px;
+    padding: 5px;
+}
+
+.navbar-brand {
+    color: #f8f9fa;
+}
+
+.nav-link {
+    color: #f8f9fa;
+}
+
+.nav-link:hover {
+    color: #adb5bd;
+}
+
+.img-fluid {
+    border-radius: 5px;
+
+    min-width: 160px;
+}
+
+.jumbotron {
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.examples {
+    border-radius: 10px;
+    margin: 20px;
+    margin-left: 40px;
+    width: 290px;
+    height: 200px;
+    max-width: fit-content;
+}
+
+/* Define styles for the retracted sidebar */
+.retracted #sidebar {
+    width: 0;
+}
+
+.retracted .navbar-toggler {
+    margin-left: 0;
+}
+
+.retracted #content {
+    margin-left: 0;
+}
