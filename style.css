@@ -31,6 +31,10 @@ body {
     padding: 5px;
 }
 
+.hero-main {
+    margin-top: 50px;
+}
+
 .navbar-brand {
     color: #f8f9fa;
 }
