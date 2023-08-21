@@ -7,20 +7,24 @@
     <title>AmeriPanel SC</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">AmeriPanel Homes of South Carolina</a>
+                <a class="navbar-brand" href="#">
+                    <img src="http://www.ameripanelsc.com/assets/images/logo.15054702.jpg" alt="AmeriPanel Logo"
+                        class="img-fluid" style="max-width: 100px;">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Home</a>
                         </li>
@@ -39,26 +43,37 @@
     <!-- Left Side Navbar -->
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-md-2 d-none d-md-block sidebar">
-                <div class="sidebar-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Dashboard</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Orders</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Products</a>
-                        </li>
-                    </ul>
+            <nav class="col-md-1 d-md-block sidebar">
+                <div class="position-fixed" id="sidebar">
+                    <div class="sidebar-sticky">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="collapse show" id="sidebarCollapse">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Dashboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Orders</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Products</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </nav>
 
-            <!-- Hero Section -->
+
+            <!-- Hero Section JumboTron-->
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                 <div class="jumbotron bg-dark">
-                    <img class=" " src="http://www.ameripanelsc.com/assets/images/CHAVIS_PHIPPS_167.9344457_large.jpg"
+                    <img class="examples"
+                        src="http://www.ameripanelsc.com/assets/images/CHAVIS_PHIPPS_167.9344457_large.jpg"
                         alt="Construction Image" class="img-fluid" style="max-width: 100%; max-height: 200px;">
                     <img class=" " src="http://www.ameripanelsc.com/assets/images/CHAVIS_PHIPPS_235.29970447_std.jpg"
                         alt="Construction Image" class="img-fluid" style="max-width: 100%; max-height: 200px;">
@@ -96,6 +111,14 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script>
+        const sidebarToggle = document.querySelector('#sidebarCollapse');
+        const sidebar = document.querySelector('#sidebar');
+
+        sidebarToggle.addEventListener('click', function () {
+            sidebar.classList.toggle('retracted');
+        });
+    </script>
 </body>
 
 </html>
