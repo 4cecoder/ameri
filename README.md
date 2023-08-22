@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c2a01fd8-b479-4ba4-93af-c6e9e0779d3c/deploy-status)](https://app.netlify.com/sites/ameripanel/deploys)
 
 
-### React + TypeScript + Vite
+### Vite + React + TypeScript + TailwindCSS
 
 
 
